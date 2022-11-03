@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+.weight300{
+    font-size: 14px;
+    font-weight: 300;
+}
+.weight400 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.weight600 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.cyan {
+    color:hsl(178, 100%, 50%)
+}
+.softBlue{
+    color: hsl(215, 51%, 70%);
+}
+.shiftRight{
+    margin-left: auto;
+}
+a{
+    text-decoration: none;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    gap:100vh;
+    background-color: hsl(217, 54%, 11%)
+}
+.card {
+    margin: 50px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    border-width: 10px;
+    border-color: aliceblue;
+
+    width:300px;
+    height:450px;
+    background-color:hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.card img{
+    width: 85%;
+    height: auto;
+    margin-right: 0;
+    align-self: center;
+    border-radius: 15px;
+}
+
+#viewHover{
+    width: auto;
+    position: absolute;
+    left: 30px;
+    top: 4px;
+    opacity: 1;
+}
+
+.detail {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.change{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+}
+.change .cryptoIcon{
+    width: 4%;
+}
+.change .time{
+    width: 6%;
+}
+.creator{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    border: 0;
+    border-top: 0.5px;
+    border-color: black;
+    border-style: solid;
+}
+.creator a {
+    margin-left: 5px;
+}
+#avatar {
+    border-radius: 50% 50% 50% 50%;
+    border: 1px;
+    border-color: white;
+    border-style:solid;
+    width: 10%;
+    margin-right: 10px;
+}
+
+.cyanEff:hover {
+    color: hsl(178, 100%, 50%);
+}
+/* @media screen and (min-width:375px) {
+    
+}
+
+@media screen and (min-width:1440px) {
+
+} */
