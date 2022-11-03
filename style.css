@@ -31,12 +31,13 @@ a{
 }
 .page {
     display: flex;
+    /* flex:2 1 1; */
     flex-direction: column;
-    gap:100vh;
+    gap: 12vh;
     background-color: hsl(217, 54%, 11%)
 }
 .card {
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 15px;
@@ -51,21 +52,35 @@ a{
     justify-content: space-around;
 }
 
-
-.card img{
+.pic {
+    display: flex;
     width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.pic:hover .cryptoImg{
+    opacity: 0.5;
+    background-color: aqua;
+    
+}
+.pic:hover #hiddenIcon{
+    opacity: 1;
+}
+.card .cryptoImg{
+    max-width: 100%;
     height: auto;
     margin-right: 0;
     align-self: center;
     border-radius: 15px;
 }
 
-#viewHover{
+#hiddenIcon{
     width: auto;
     position: absolute;
-    left: 30px;
-    top: 4px;
-    opacity: 1;
+    opacity: 0;
 }
 
 .detail {
@@ -84,10 +99,14 @@ a{
     justify-content: center;
 }
 .change .cryptoIcon{
-    width: 4%;
+    max-width: 4%;
+    max-height: 70%;
+    align-self: center;
 }
 .change .time{
-    width: 6%;
+    max-width: 6%;
+    max-height: 70%;
+    align-self: center;
 }
 .creator{
     width: 85%;
@@ -96,10 +115,10 @@ a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 12px;
     border: 0;
-    border-top: 0.5px;
-    border-color: black;
+    border-top: 1.77px;
+    border-color: hsl(215, 32%, 27%);
     border-style: solid;
 }
 .creator a {
@@ -116,6 +135,17 @@ a{
 
 .cyanEff:hover {
     color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.attribution a:hover{
+    color:hsl(178, 100%, 50%);
 }
 /* @media screen and (min-width:375px) {
     
